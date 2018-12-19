@@ -35,7 +35,12 @@ module.exports = {
                     "css-loader",
                     "sass-loader"
                 ]
+            },
+            {
+                test: /\.ejs$/,
+                loader: 'ejs-loader'
             }
         ]
     }
+
 }
