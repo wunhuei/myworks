@@ -1,4 +1,4 @@
-<%= require("../partials/header.ejs")() %>
+<%= require("../partials/header.ejs")({title: htmlWebpackPlugin.options.title}) %>
 <article>
 	<div class="container h-index">
 		<div class="WebDesign-box">
@@ -76,12 +76,6 @@
 					</a>
 				</div>
 				<div class="item">
-					<a href="http://rwd1241.hiwinner.tw/" class="cover" target="_blank">
-						<img src='<%= require("../images/web/IDEC_01.png") %>' alt="">
-						<h2>鴻茂</h2>
-					</a>
-				</div>
-				<div class="item">
 					<a href="rwd1250" class="cover" target="_blank">
 						<img src='<%= require("../images/web/IDEC_13.png") %>' alt="">
 						<h2>仟米</h2>
@@ -152,6 +146,7 @@
 						<h2>高雄旅遊景點</h2>
 						<h3>串接API、大量的js判斷</h3>
 					</a>
+					<a href="#" class="github">Github</a>
 				</div>
 				<div class="item">
 					<a href="http://www.dradvice.asia/ec99/rwd1031/active-form.asp" class="cover" target="_blank">
@@ -159,6 +154,7 @@
 						<h2>BMI</h2>
 						<h3>大量的js判斷、有運用到local Storage</h3>
 					</a>
+					<a href="#" class="github">Github</a>
 				</div>
 				<div class="item">
 					<a href="https://wunhuei.github.io/myPizza/index.html#/" class="cover" target="_blank">
@@ -166,6 +162,7 @@
 						<h2>Vue網站(有簡易購物功能)</h2>
 						<h3>Vue Cli、Vue Router</h3>
 					</a>
+					<a href="#" class="github">Github</a>
 				</div>
 			</div>
 		</div>

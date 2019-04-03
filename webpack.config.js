@@ -21,15 +21,18 @@ module.exports = {
 		}),
 		new HtmlWebpackPlugin({
 			template: path.resolve(__dirname, "src", "html", "index.html"),
-			filename: path.resolve(__dirname, "dist", "index.html")
+			filename: path.resolve(__dirname, "dist", "index.html"),
+			title: "wunhuei works"
 		}),
 		new HtmlWebpackPlugin({
 			template: path.resolve(__dirname, "src", "html", "Graphic.html"),
-			filename: path.resolve(__dirname, "dist", "Graphic.html")
+			filename: path.resolve(__dirname, "dist", "Graphic.html"),
+			title: "wunhuei works - Graphi"
 		}),
 		new HtmlWebpackPlugin({
 			template: path.resolve(__dirname, "src", "html", "WebDesign.html"),
-			filename: path.resolve(__dirname, "dist", "WebDesign.html")
+			filename: path.resolve(__dirname, "dist", "WebDesign.html"),
+			title: "wunhuei works - WebDesign"
 		}),
 		new webpack.ProvidePlugin({
 			$: "jquery",

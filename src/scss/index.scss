@@ -254,6 +254,7 @@ article{
 		margin-bottom: 80px;
 		.item{
 			display: inline-block;
+			position: relative;
 			.cover{
 				display: block;
 				margin: 20px;
@@ -303,6 +304,24 @@ article{
 						opacity: 1;
 						top:186px;
 					}
+				}
+			}
+			.github{
+				text-decoration: none;
+				display: block;
+				width: 130px;
+				margin: 0 auto;
+				margin-top: 10px;
+				margin-bottom: 20px;
+				z-index: 2;
+				border: 1px solid #cfcfcf;
+				text-align: center;
+				color: #aaaaaa;
+				transition: all 0.3s;
+				&:hover{
+					border: 1px solid #565555;
+					color: #ffffff;
+					background: #646464;
 				}
 			}
 		}
