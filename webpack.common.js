@@ -3,21 +3,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const webpack = require("webpack");
 
-
 module.exports = {
 	entry:path.resolve(__dirname,"src","index.js"),
 	output: {
 		path:path.resolve(__dirname,"dist"),
-		filename:"bundle.js"
-	},
-	devtool: "eval-source-map",
-	devServer: {
-		contentBase: path.resolve(__dirname,"dist"),
-		port:4000
+		filename:"bundle-[hash].js"
 	},
 	plugins:[
 		new MiniCssExtractPlugin({
-			filename: "bundle.css"
+			filename: "bundle-[hash].css"
 		}),
 		new HtmlWebpackPlugin({
 			template: path.resolve(__dirname, "src", "html", "index.html"),
